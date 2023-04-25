@@ -3,8 +3,10 @@
 - Maira Alejandra Ortega
 - Cristian Miguel Peñata 
 - Estefania Zoe Peñata 
+## Docente:
+- Juan Carlos Giraldo
 ### Asignatura:
-Fundamentos de algoritmia
+- Fundamentos de algoritmia
 ### Universidad de Córdoba
 ###### Facultad de educación y ciencias humanas
 ###### Lic. En informática 
