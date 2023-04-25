@@ -2,7 +2,6 @@
 ## Integrantes:
 Cristian Miguel Peñata  
 Estefanía Zoe Peñata
-
 Maira Alejandra Ortega
 ### Asignatura:
 Fundamentos de algoritmia
