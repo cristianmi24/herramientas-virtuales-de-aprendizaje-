@@ -1,7 +1,7 @@
 # Herramientas virtuales de Aprendizaje
 ## Integrantes:
-Cristian Miguel Peñata  
-Maira Alejandra Ortega. 
+Maira Alejandra Ortega
+Cristian Miguel Peñata 
 Estefania Zoe Peñata 
 ### Asignatura:
 Fundamentos de algoritmia
