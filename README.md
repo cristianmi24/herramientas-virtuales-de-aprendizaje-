@@ -1,8 +1,8 @@
 # Herramientas virtuales de Aprendizaje
 ## Integrantes:
 Cristian Miguel Peñata  
-Estefanía Zoe Peñata
 Maira Alejandra Ortega
+Estefania Zoe Peñata 
 ### Asignatura:
 Fundamentos de algoritmia
 ### Universidad de Córdoba
