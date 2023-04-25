@@ -1,4 +1,4 @@
-#Herramientas virtuales de Aprendizaje
+# Herramientas virtuales de Aprendizaje
 ## Integrantes:
 Cristian Miguel Peñata  
 Estefanía Zoe Peñata
@@ -10,4 +10,4 @@ Fundamentos de algoritmia
 ##### Lic. En informática 
 ###### Montería – Córdoba
 ####### Introducción
-Las herramientas virtuales de aprendizaje, como su nombre lo indica, son herramientas digitales diseñadas para mejorar la experiencia de aprendizaje para así facilitar el proceso de enseñanza. Estas herramientas se han vuelto cada vez más populares y relevantes en los últimos años, debido especialmente al aumento de la educación en línea y la educación a distancia. herramientas 
+Las herramientas virtuales de aprendizaje, como su nombre lo indica, son herramientas digitales diseñadas para mejorar la experiencia de aprendizaje para así facilitar el proceso de enseñanza. Estas herramientas se han vuelto cada vez más populares y relevantes en los últimos años, debido especialmente al aumento de la educación en línea y la educación a distancia. herramientas virtuales de aprendizaje, como su nombre lo indica, son 
