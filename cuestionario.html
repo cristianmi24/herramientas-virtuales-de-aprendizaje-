@@ -1,0 +1,214 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Evaluación</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"/>
+      <link rel="stylesheet" href="css/style.css">
+         
+  </head>
+  <body>
+    <a style="background-color: #ff0e0e;"  href="actividades.html" class="button">REGRESAR</a>
+    <div class="corner-button">
+        <a href="index.html">FIN</a>
+      </div>
+    <!--CUESTIONARIO-->
+    <section class="section container">
+     
+        <h1  style="color: #ff0e0e;" class="title ">Evaluacion sobre Herramientas virtuales de aprendizaje</h1>
+      <br>
+      <p class="subtitle">
+        Este es el cuestionario realizado en html y javascript basado en todo nuestro contenido , que se encuentra en nuestra página web ,  disfruten esta y las diversas actividades que encontraran en nuestra primera página web (⁠｡⁠•̀⁠ᴗ⁠-⁠)⁠✧
+      </p>
+      <br>
+      <!--1 PREGUNTA-->
+      <article class="panel is-danger">
+        <p class="panel-heading">¿Cuál de las siguientes herramientas virtuales de aprendizaje se utiliza principalmente como plataforma de gestión del aprendizaje en entornos educativos?</p>
+        <a class="panel-block" onclick="seleccionar1(this)">Microsoft Team</a>
+        <a class="panel-block" onclick="seleccionar1(this)">Dropbox</a>
+        <a id="correcta1" class="panel-block" onclick="seleccionar1(this)">Moodle</a>
+        <a class="panel-block" onclick="seleccionar1(this)">Zoom</a>
+        <p id="mensaje1" class="panel-block"></p>
+        <p id="puntos1" class="panel-block"></p>
+        <!--2 PREGUNTA-->
+      </article>
+      <article class="panel is-danger">
+        <p class="panel-heading">¿Cuál de las siguientes herramientas virtuales de aprendizaje ofrece funcionalidades para la colaboración y comunicación en línea, incluyendo videollamadas y chat?</p>
+        <a class="panel-block" onclick="seleccionar2(this)">Zoom</a>
+        <a class="panel-block" onclick="seleccionar2(this)">Dropbox</a>
+        <a id="correcta2" class="panel-block" onclick="seleccionar2(this)">Google meet</a>
+        <a class="panel-block" onclick="seleccionar2(this)">Moodle</a>
+        <p id="mensaje2" class="panel-block"></p>
+        <p id="puntos2" class="panel-block"></p>
+      </article>
+  
+ <!--3 PREGUNTA-->
+    <article class="panel is-danger">
+      <p class="panel-heading"> ¿Cuál de las siguientes herramientas virtuales de aprendizaje es una plataforma de almacenamiento en la nube utilizada para compartir y sincronizar archivos?</p>
+      <a  id="correcta3" class="panel-block" onclick="seleccionar3(this)">Onedrive</a>
+        <a class="panel-block" onclick="seleccionar3(this)">Moodle</a>
+        <a  class="panel-block" onclick="seleccionar3(this)">Google meet</a>
+        <a class="panel-block" onclick="seleccionar3(this)">Microsoft Team</a>
+        <p id="mensaje3" class="panel-block"></p>
+        <p id="puntos3" class="panel-block"></p>
+    </article>
+<!--4 PREGUNTA-->
+<article class="panel is-danger">
+  <p class="panel-heading"> ¿Cuál de las siguientes herramientas virtuales de aprendizaje se utiliza principalmente como plataforma de comunicación y colaboración en tiempo real para equipos y grupos de trabajo?</p>
+  <a   class="panel-block" onclick="seleccionar4(this)">Google classroom</a>
+    <a class="panel-block" onclick="seleccionar4(this)">Dropbox</a>
+    <a  class="panel-block" onclick="seleccionar4(this)">Chamilo</a>
+    <a  id="correcta4" class="panel-block" onclick="seleccionar4(this)">ClingMeeting</a>
+    <p id="mensaje4" class="panel-block"></p>
+    <p id="puntos4" class="panel-block"></p>
+    </article>
+<!--5 PREGUNTA-->
+<article class="panel is-danger">
+  <p class="panel-heading">¿Cuál de las siguientes herramientas virtuales de aprendizaje es una plataforma desarrollada por Google que permite la creación y administración de cursos en línea?</p>
+  <a  id="correcta5" class="panel-block" onclick="seleccionar5(this)">Google classroom</a>
+    <a class="panel-block" onclick="seleccionar5(this)">Onedrive</a>
+    <a  class="panel-block" onclick="seleccionar5(this)">Moodle</a>
+    <a   class="panel-block" onclick="seleccionar5(this)">Zoom</a>
+    <p id="mensaje5" class="panel-block"></p>
+    <p id="puntos5" class="panel-block"></p>
+    </article>
+      
+<p id="resultadoFinal" class="title"></p>
+
+
+    </section>
+<!-- JAVASSCRIPT-->
+    <script>
+      var pregunta1 = false;	
+      var pregunta1puntos = 0;
+      var pregunta2 = false;	
+      var pregunta2puntos = 0;
+      var pregunta3 = false;
+      var pregunta3puntos = 0;
+      var pregunta4 = false;
+      var resultado4 =0;
+      var pregunta5 = false;
+      var resultado5 = 0 ;
+      var resultadoFinal = 0;
+      
+
+      function seleccionar1(opcion) {
+        if (pregunta1 === false) {
+          let mensaje = document.getElementById("mensaje1");
+          if (opcion.id === "correcta1") {
+            mensaje.innerText = "Bien, " + opcion.innerText + " es la opción correcta";
+            mensaje.classList.remove("has-text-danger");
+            mensaje.classList.add("has-text-primary");
+            pregunta1puntos = 1;
+          } else {
+            mensaje.innerText = "Error!! " + opcion.innerText +  " No es la opción correcta";
+            mensaje.classList.remove("has-text-primary");
+            mensaje.classList.add("has-text-danger");
+            pregunta1puntos = -1;
+          }
+          pregunta1 = true;
+          let mensajePuntos1 = document.getElementById("puntos1");
+          mensajePuntos1.innerText = "Puntos: " + pregunta1puntos;
+          resultado();
+        }
+      }
+
+      function seleccionar2(opcion) {
+        if (pregunta2 === false) {
+          let mensaje = document.getElementById("mensaje2");
+          if (opcion.id === "correcta2") {
+            mensaje.innerText = "Bien, " + opcion.innerText + " es la opción correcta";
+            mensaje.classList.remove("has-text-danger");
+            mensaje.classList.add("has-text-primary");
+            pregunta2puntos = 1;
+          } else {
+            mensaje.innerText = "Error!! " + opcion.innerText +  " No es la opción correcta";
+            mensaje.classList.remove("has-text-primary");
+            mensaje.classList.add("has-text-danger");
+            pregunta2puntos = -1;
+          }
+          pregunta2 = true;
+          let mensajePuntos2 = document.getElementById("puntos2");
+          mensajePuntos2.innerText = "Puntos: " + pregunta2puntos;
+          resultado();
+        }
+      }
+
+      function seleccionar3(opcion) {
+        if (pregunta3 === false) {
+          let mensaje = document.getElementById("mensaje3");
+          if (opcion.id === "correcta3") {
+            mensaje.innerText = "Bien, " + opcion.innerText + " es la opción correcta";
+            mensaje.classList.remove("has-text-danger");
+            mensaje.classList.add("has-text-primary");
+            pregunta3puntos = 1;
+          } else {
+            mensaje.innerText = "Error!! " + opcion.innerText +  " No es la opción correcta";
+            mensaje.classList.remove("has-text-primary");
+            mensaje.classList.add("has-text-danger");
+            pregunta3puntos = -1;
+          }
+          pregunta3 = true;
+          let mensajePuntos3 = document.getElementById("puntos3");
+          mensajePuntos3.innerText = "Puntos: " + pregunta3puntos;
+          resultado();
+        }
+      }
+
+
+      function seleccionar4(opcion) {
+        if (pregunta4 === false) {
+          let mensaje = document.getElementById("mensaje4");
+          if (opcion.id === "correcta4") {
+            mensaje.innerText = "Bien, " + opcion.innerText + " es la opción correcta";
+            mensaje.classList.remove("has-text-danger");
+            mensaje.classList.add("has-text-primary");
+            pregunta4puntos = 1;
+          } else {
+            mensaje.innerText = "Error!! " + opcion.innerText +  " No es la opción correcta";
+            mensaje.classList.remove("has-text-primary");
+            mensaje.classList.add("has-text-danger");
+            pregunta4puntos = -1;
+          }
+          pregunta4 = true;
+          let mensajePuntos4 = document.getElementById("puntos4");
+          mensajePuntos4.innerText = "Puntos: " + pregunta4puntos;
+          resultado();
+        }
+      }
+
+      
+      function seleccionar5(opcion) {
+        if (pregunta5 === false) {
+          let mensaje = document.getElementById("mensaje5");
+          if (opcion.id === "correcta5") {
+            mensaje.innerText = "Bien, " + opcion.innerText + " es la opción correcta";
+            mensaje.classList.remove("has-text-danger");
+            mensaje.classList.add("has-text-primary");
+            pregunta5puntos = 1;
+          } else {
+            mensaje.innerText = "Error!! " + opcion.innerText +  " No es la opción correcta";
+            mensaje.classList.remove("has-text-primary");
+            mensaje.classList.add("has-text-danger");
+            pregunta5puntos = -1;
+          }
+          pregunta5 = true;
+          let mensajePuntos5 = document.getElementById("puntos5");
+          mensajePuntos5.innerText = "Puntos: " + pregunta5puntos;
+          resultado();
+        }
+      }
+
+
+
+      function resultado() {
+        resultadoFinal = pregunta1puntos + pregunta2puntos + pregunta3puntos + pregunta4puntos + pregunta5puntos ;
+        let mensajeResultado = document.getElementById("resultadoFinal");
+        mensajeResultado.innerText = "Resultado Final: " + resultadoFinal + "⊂⁠(⁠•⁠‿⁠•⁠⊂⁠ ⁠)⁠*⁠.⁠✧";
+      }
+
+    </script>
+  </body>
+</html>

@@ -307,7 +307,7 @@ ul.lan li {
 
 .select,
 .label {
-     color: #fff;
+     color: #141313;
      display: block;
      font-size: 16px;
 }
@@ -1417,4 +1417,28 @@ ul.img_icon li {
 
 
 /** end footer **/
+@keyframes parpadeo {
+     0% { opacity: 1; }
+     50% { opacity: 0; }
+     100% { opacity: 1; }
+   }
 
+   .parpadeo {
+     animation: parpadeo 1s infinite;
+   }
+
+
+   .corner-button {
+     position: fixed;
+     bottom: 20px; /* Ajusta el valor según tu preferencia */
+     right: 20px; /* Ajusta el valor según tu preferencia */
+   }
+   
+   .corner-button a {
+     display: block;
+     padding: 10px;
+     background-color: #ff0000; /* Personaliza el color de fondo según tus necesidades */
+     color: #ffffff; /* Personaliza el color del texto según tus necesidades */
+     text-decoration: none;
+   }
+   
